@@ -11,7 +11,7 @@ DockerBackup is an easy-to-use script for backing up your Docker containers on-d
 ## Requirements:
 Before using DockerBackup, please make sure you have done the following:
 
-- Add all your container sources for the backup to the dockerbackup.ini file and filled in all the necessary parameters.
+- Add all your container sources for the backup to the **dockerbackup.ini** file and filled in all the necessary parameters.
 - Installed the external script called docker-script-find-latest-image-tag. This script will be downloaded automatically and placed in the appropriate directory.
 
 To find more information about this script, you can check it out on GitHub:
