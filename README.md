@@ -8,13 +8,14 @@ DockerBackup is an easy-to-use script for backing up your Docker containers on-d
 - **Portainer stack config** - It backs up container docker-compose.yml and .env files, making it easy to restore your stack configuration in the event of a disaster.
 - **Send to a Remote Location** - It uses rsync protocol, making it a great option for disaster recovery and offsite backup.
 - **Restore script** - It provides a shell script command per image backup to easily restore containers and stacks from backups.
+
 ## Requirements:
 Before using DockerBackup, please make sure you have done the following:
 
-- Add all your container sources for the backup to the **dockerbackup.ini** file and filled in all the necessary parameters.
-- Installed the external script called docker-script-find-latest-image-tag. This script will be downloaded automatically and placed in the appropriate directory.
+- All your container sources should be added to the dockerbackup configuration file: **dockerbackup.ini** file. Make sure to fill in all the necessary parameters.
+- An external script from a third party contributor is needed (**docker-script-find-latest-image-tag**). This script will be downloaded automatically and placed in the same location of the dockerbackup script files.
 
-To find more information about this script, you can check it out on GitHub:
+To find more information about this third party script, you can check it out on GitHub:
 https://github.com/ryandaniels/docker-script-find-latest-image-tag/blob/master/docker_image_find_tag.sh
 
 ## Usage:
